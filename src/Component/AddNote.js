@@ -27,7 +27,7 @@ function AddNote() {
             id="title"
             name="title"
             aria-describedby="emailHelp"
-            placeholder="Enter email"
+            placeholder="Enter Title"
             onChange={onchange}
           />
         </div>
@@ -38,7 +38,7 @@ function AddNote() {
             className="form-control"
             id="description"
             name="description"
-            placeholder="Password"
+            placeholder="Enter Description"
             onChange={onchange}
           />
         </div>

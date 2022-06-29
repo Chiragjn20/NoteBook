@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-const mongoURI =
-  "mongodb://localhost:27017/inotebook?readPreference=primary&appname=MongoDB%20Compass&ssl=false";
+const mongoURI ='mongodb+srv://chikzxz:buletchali@cluster0.bau4h.mongodb.net/Notebook?retryWrites=true&w=majority';
+
+  
 
 
 const connectToMongo =() =>{
@@ -11,3 +12,6 @@ const connectToMongo =() =>{
 
 
 module.exports = connectToMongo
+
+
+// "mongodb://localhost:27017/inotebook?readPreference=primary&appname=MongoDB%20Compass&ssl=false";
