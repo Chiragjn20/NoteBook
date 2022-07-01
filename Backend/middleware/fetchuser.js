@@ -15,9 +15,8 @@ const fetchuser=( req ,res , next )=>{
         
     } catch (error) {
         res.status(500).send("some error occured 2");
+        console.log(error);
     }
   
 }
-
-
 module.exports = fetchuser;

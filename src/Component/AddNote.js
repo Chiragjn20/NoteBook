@@ -5,11 +5,12 @@ function AddNote() {
   const context = useContext(noteContext)
     const { addNote} = context;
 
-    const [note , setNote ] = useState({title : "" , description:"", tag :"default"})
+    const [note , setNote ] = useState({title : "" , description:"", tag :""})
 
     const handleClick =(e)=>{
       e.preventDefault();
         addNote(note.title , note.description , note.tag)
+        setNote({title : "" , description:"", tag :""})
     }
 
     const onchange =(e)=>{
@@ -19,7 +20,7 @@ function AddNote() {
     <div className="container my-3">
       <h3> Add a note</h3>
       <form>
-        <div className="form-group">
+        <div className="form-group my-1">
           <label htmlFor="title">Title</label>
           <input
             type="text"
@@ -29,9 +30,11 @@ function AddNote() {
             aria-describedby="emailHelp"
             placeholder="Enter Title"
             onChange={onchange}
+            minLength={5} required
+            value={note.title}
           />
         </div>
-        <div className="form-group">
+        <div className="form-group my-1">
           <label htmlFor="description">Description</label>
           <input
             type="text"
@@ -40,18 +43,25 @@ function AddNote() {
             name="description"
             placeholder="Enter Description"
             onChange={onchange}
+            minLength={5} required
+            value={note.description}
           />
         </div>
-        <div className="form-group form-check">
+
+        <div className="form-group my-1">
+          <label htmlFor="tag">tag</label>
           <input
-            type="checkbox"
-            className="form-check-input"
-            id="exampleCheck1"
+            type="text"
+            className="form-control"
+            id="tag"
+            name="tag"
+            placeholder="Enter tag"
+            onChange={onchange}
+            minLength={5} required
+            value={note.tag}
           />
-          <label className="form-check-label" htmlFor="exampleCheck1">
-            Check me out
-          </label>
         </div>
+       
         <button type="submit"  onClick={handleClick} className="btn btn-primary">
           Add note
         </button>
