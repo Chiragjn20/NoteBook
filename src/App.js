@@ -4,7 +4,6 @@ import Navbar from "./Component/Navbar";
 import { Home } from "./Component/Home";
 import About from "./Component/About";
 import NodeState from "./Context/Notes/NodeState";
-import Alert from "./Component/Alert";
 import Login from "./Component/Login";
 import SIgnup from "./Component/Signup";
 
@@ -13,7 +12,6 @@ function App() {
     <NodeState>
       <Router>
         <Navbar />
-        <Alert message ="kaakle"/>
         <div className="container">
           <Routes>
             <Route exact path="/home" element={<Home />} />
