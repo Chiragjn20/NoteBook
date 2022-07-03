@@ -29,7 +29,7 @@ const Login = () => {
         setCredentials({...creadentials, [e.target.name]: e.target.value})
     }
   return (
-    <div className="justify-content-center" style={{width:'50%'}}>
+    <div className="justify-content-center my-3" style={{width:'50%'}}>
       <form  onSubmit={handleSubmit}>
         <div className="form-group my-1">
           <label htmlFor="email">Email address</label>

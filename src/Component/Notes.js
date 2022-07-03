@@ -14,7 +14,6 @@ const Notes = () => {
       getNotes();
     }else{
       navigate('/login');
-
     }
   
   }, []);
@@ -106,7 +105,7 @@ const Notes = () => {
           />
         </div>
 
-        <div className="form-group my-1">
+        <div className="form-group mt-3">
           <label htmlFor="tag">tag</label>
           <input
           value={note.etag}

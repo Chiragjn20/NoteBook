@@ -25,7 +25,7 @@ const Signup = () => {
         setCredentials({...creadentials, [e.target.name]: e.target.value})
     }
   return (
-    <div className="container">
+    <div className="container my-3">
       <form onSubmit={handleSubmit}>
         <div className="form-group my-1">
           <label htmlFor="name">Enter Full Name</label>

@@ -49,7 +49,7 @@ function AddNote() {
         </div>
 
         <div className="form-group my-1">
-          <label htmlFor="tag">tag</label>
+          <label htmlFor="tag">Tag</label>
           <input
             type="text"
             className="form-control"
