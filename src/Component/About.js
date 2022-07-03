@@ -1,7 +1,8 @@
 import React from 'react'
 const  About=() =>{
   return (
-    <div>This is all about the about componenet.
+    <div>
+      This is about.
     </div>
   )
 }
